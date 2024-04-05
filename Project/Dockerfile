@@ -6,11 +6,11 @@ WORKDIR /src
 
 ARG VERSION
 
-ENV PORT 3000
-
 COPY package.json ./
 
 RUN npm install
+
+ENV PORT 3000
 
 EXPOSE ${PORT}
 
